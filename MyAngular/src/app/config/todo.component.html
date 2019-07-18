@@ -1,0 +1,9 @@
+<p>config works!</p>
+<div *ngFor="let todoItem of data; let i=index">
+    <h3>
+        <a [title]="todoItem.name + ' details'" [routerLink]="[ '/todoItem', todoItem.id ]">{{todoItem.name}}</a>
+    </h3>
+    <p><b>Id: </b>{{todoItem.id}}</p>
+    <p>{{todoItem.isComplete}}</p>
+    ---
+</div>
