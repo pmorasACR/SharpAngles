@@ -1,0 +1,14 @@
+C:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\bin\Debug\netcoreapp2.2\MyAPI.deps.json
+C:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\bin\Debug\netcoreapp2.2\MyAPI.runtimeconfig.json
+C:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\bin\Debug\netcoreapp2.2\MyAPI.runtimeconfig.dev.json
+c:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\bin\Debug\netcoreapp2.2\MyAPI.dll
+c:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\bin\Debug\netcoreapp2.2\MyAPI.pdb
+c:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\obj\Debug\netcoreapp2.2\MyAPI.csprojAssemblyReference.cache
+c:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\obj\Debug\netcoreapp2.2\MyAPI.csproj.CoreCompileInputs.cache
+c:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\obj\Debug\netcoreapp2.2\MyAPI.RazorAssemblyInfo.cache
+c:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\obj\Debug\netcoreapp2.2\MyAPI.RazorAssemblyInfo.cs
+c:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\obj\Debug\netcoreapp2.2\MyAPI.AssemblyInfoInputs.cache
+c:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\obj\Debug\netcoreapp2.2\MyAPI.AssemblyInfo.cs
+c:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\obj\Debug\netcoreapp2.2\MyAPI.RazorTargetAssemblyInfo.cache
+c:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\obj\Debug\netcoreapp2.2\MyAPI.dll
+c:\Users\pmoras\Documents\code\CSwebAPI\MyAPI\obj\Debug\netcoreapp2.2\MyAPI.pdb
