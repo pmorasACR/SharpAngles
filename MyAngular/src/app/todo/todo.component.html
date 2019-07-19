@@ -1,4 +1,4 @@
-<p>config works!</p>
+<<a [routerLink]="[ '/todoform' ]">Create TodoItem</a>>
 <div *ngFor="let todoItem of data; let i=index">
     <h3>
         <a [title]="todoItem.name + ' details'" [routerLink]="[ '/todoItem', todoItem.id ]">{{todoItem.name}}</a>

@@ -4,21 +4,15 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "run C#",
-            "type": "shell",
+            "label": "build",
+            "dependsOn":"run Angular",
             "command": "dotnet",
+            "type": "process",
             "args": [
-                "run",
-                "--project", "./MyAPI"
+                "build",
+                "${workspaceFolder}/MyAPI.csproj"
             ],
-            "group": "build",
-            "presentation": {
-                // Reveal the output only if unrecognized errors occur.
-                "reveal": "always",
-                "showReuseMessage": false
-            },
-            // Use the standard MS compiler pattern to detect errors, warnings and infos
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$tsc"
         },
         {
             "label": "run Angular",

@@ -2,6 +2,9 @@ import { logging } from 'protractor';
 
 export class TodoItem {
     id: number;
-    name: string;
     isComplete: boolean;
+
+    constructor(public name : string){
+        
+    }
 }
