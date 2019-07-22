@@ -23,7 +23,7 @@ namespace MyAPI
         {
             //Cross-Origin
             services.AddCors(options =>{
-                options.AddPolicy("AllowMyOrigin",builder => builder.AllowAnyOrigin());// builder.WithOrigins("http://localhost:4200"));
+                options.AddPolicy("AllowMyOrigin",builder => {builder.AllowAnyOrigin(); builder.AllowAnyHeader();});// builder.WithOrigins("http://localhost:4200"));
             });
             services.AddDbContext<TodoContext>(opt =>
                 opt.UseInMemoryDatabase("TodoList")

@@ -13,7 +13,7 @@ import { HttpResponse } from '@angular/common/http';
 export class TodoComponent implements OnInit {
   data : TodoItem[];
   headers: string[];
-  constructor(private configService : TodoService) { }
+  constructor(private todoService : TodoService) { }
 
   ngOnInit() {
     console.log("init todo");
@@ -25,7 +25,7 @@ export class TodoComponent implements OnInit {
   // }
 
   showTodoResponse(){
-    this.configService.getTodoResponse()
+    this.todoService.getTodoResponse()
       .subscribe(resp => {
         const keys = resp.headers.keys();
         //get the header data and format it

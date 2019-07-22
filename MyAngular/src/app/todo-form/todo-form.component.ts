@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoItem } from "../shared/models/todo-item";
+import { TodoService } from '../todo.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-todo-form',
@@ -9,13 +11,18 @@ import { TodoItem } from "../shared/models/todo-item";
 export class TodoFormComponent implements OnInit {
   model = new TodoItem('');
   
-  constructor() { }
+  constructor(private todoService : TodoService, private router : Router) { }
   ngOnInit() {
   }
 
   submitted = false;
 
-  onSubmit() { this.submitted = true }
+  onSubmit() { 
+    this.submitted = true;
+    let promise =  this.todoService.addTodo(this.model);
+    promise.subscribe(todo => this.router.navigateByUrl('/'));
+    
+  }
 
   newTodo(){
     this.model = new TodoItem('new');

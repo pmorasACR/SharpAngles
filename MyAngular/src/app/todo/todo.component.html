@@ -3,8 +3,9 @@
     <h3>
         <a [title]="todoItem.name + ' details'" [routerLink]="[ '/todoItem', todoItem.id ]">{{todoItem.name}}</a>
     </h3>
+    <input type="text" >
     <div id="custom"></div>
-    <p>You Wrote: {{last}}</p>
+    <p>You Wrote: {{spy}}</p>
     <p><b>Id: </b>{{todoItem.id}}</p>
     <p>{{todoItem.isComplete}}</p>
     ---
