@@ -28,6 +28,9 @@ namespace MyAPI
             services.AddDbContext<TodoContext>(opt =>
                 opt.UseInMemoryDatabase("TodoList")
             );
+            services.AddDbContext<DeploymentGroupContext>(opt =>
+                opt.UseInMemoryDatabase("DeploymentGroupList")
+            );
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

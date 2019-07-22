@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Cors;
 namespace MyAPI.Controllers
 {
     [EnableCors("AllowMyOrigin")]
-    [Route("api/Todo")]
+    [Route("api/Deployment")]
     [ApiController]
     public class DeploymentController : ControllerBase
     {
@@ -23,5 +23,16 @@ namespace MyAPI.Controllers
                 _context.SaveChanges();
             }
         }
+
+        //Get: api/Deployment
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<DeploymentGroup>>> Get(){
+            return await _context.groups.ToListAsync();
+        }
+
+        
+
+
+
     }
 }

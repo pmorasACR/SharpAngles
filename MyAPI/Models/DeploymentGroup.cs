@@ -8,10 +8,11 @@ namespace MyAPI.Models
     /// </summary>
     public class DeploymentGroup
     {
-        DeploymentTarget production;
-        DeploymentTarget development;
-        DeploymentTarget testing;
-        List<TeamMember> team; 
+        public long Id {get;set;}
+        public string Name {get;set;}
+
+        public List<DeploymentTarget> targets {get;set;}
+        public List<TeamMember> team {get;set;} 
 
     }
 }

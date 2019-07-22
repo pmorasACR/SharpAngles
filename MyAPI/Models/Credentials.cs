@@ -5,5 +5,6 @@ namespace MyAPI.Models
     /// </summary>
     public class Credentials
     {
+        public long Id {get;set;} 
     }
 }

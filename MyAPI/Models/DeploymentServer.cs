@@ -6,5 +6,6 @@ namespace MyAPI.Models
     /// </summary>
     internal class DeploymentServer
     {
+        public long Id {get;set;} 
     }
 }
